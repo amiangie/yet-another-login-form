@@ -7,6 +7,9 @@
       "nameSlug": "yet-another-login-form",
       "nameCamel": "Yetanotherloginform",
       "features": {}
-    }
+    },
+    "pages": [
+      "Login"
+    ]
   }
 }

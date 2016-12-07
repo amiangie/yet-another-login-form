@@ -12,18 +12,12 @@
       <a href="{{site.url}}" rel="home">{{site.name}}</a>
     {% endblock %}
   </header>
-
+ 
   <main>
     {% block content %}
       Sorry, no content
     {% endblock %}
   </main>
-
-  {% block sidebar %}
-    <aside>
-      {% include 'partials/sidebar.twig' %}
-    </aside>
-  {% endblock %}
 
   {% block footer %}
     <footer>

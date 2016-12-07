@@ -1,0 +1,65 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Login' %}
+{% set body_class = 'testclass' %}
+
+{% block header %}
+
+  <div class="notice notice--top">
+    <a href="" class="link">Vaenägijale</a>
+  </div>
+  	
+{% endblock %}
+
+
+{% block content %}
+ 
+  <section class="box box--login">
+  	<header class="box__header">
+      <a href="" class="box__logo">
+        <img src="assets/images/sib_logo.svg" alt="" class="box__logo-image">
+      </a>
+    </header>
+    
+    <div class="box__content">
+      <h1 class="box__title">
+        Sisenen Sotsiaalkindlustusameti iseteenindusse
+      </h1>
+      <ul class="accordion">
+        <li class="accordion__item">
+          <button class="accordion__trigger"></button>
+          <div class="accordion__content"></div>
+        </li>
+        <li class="accordion__item">
+          <button class="accordion__trigger"></button>
+          <div class="accordion__content">
+            <form action="">
+              <label for="userID" class="form__label">
+                <span class="visuallyhidden">Sinu isikukood</span>
+                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood">
+              </label>
+              
+              <label for="userMobile" class="form__label visuallyhidden">
+                <span class="visuallyhidden">Sinu isikukood</span>
+                <input type="text" class="form__input" id="userMobile" placeholder="Sinu telefoninumber">
+              </label>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="box__footer">
+      <div class="box__footer--left">
+        <a href="" class="link">Mis on iseteenindus?</a>
+      </div>
+      <div class="box__footer--right">
+        <a href="" class="link">ENG</a>
+        <a href="" class="link">RUS</a>
+      </div>
+    </footer>
+  </section>
+  
+{% endblock %}
+
+
+
