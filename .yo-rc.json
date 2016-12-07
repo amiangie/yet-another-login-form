@@ -1,0 +1,12 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Yet Another Login Form",
+      "author": "Angie K. Titova",
+      "projectType": "fe",
+      "nameSlug": "yet-another-login-form",
+      "nameCamel": "Yetanotherloginform",
+      "features": {}
+    }
+  }
+}
