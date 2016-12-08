@@ -5,9 +5,23 @@
   border: 1px solid $color-border;
   border-bottom: none;
   border-radius: 2px;
+  
+  @include bp-mobile {
+    border: none;
+    background: $color-bg;
+  }
 }
 .accordion__item {
   border-bottom: 1px solid $color-border;
+  
+  @include bp-mobile {
+    &.accordion__item--idcard {
+      display: none;
+    }
+
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 .accordion__trigger {
   position: relative;
@@ -35,6 +49,10 @@
   &--expanded:after {
     transform: translateY(-50%) scaleY(-1);  
   }
+    
+  @include bp-mobile {
+    display: none;  
+  }
 }
 .accordion__image {
   width: rem-calc(74);
@@ -44,6 +62,11 @@
 }
 .accordion__content {
   padding: 0 rem-calc(34) rem-calc(30) rem-calc(29);
+  
+  @include bp-mobile {
+    border-bottom: none;
+    padding: 0 0 rem-calc(30) 0;
+  }
 }
 
 

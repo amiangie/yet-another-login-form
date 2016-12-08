@@ -6,4 +6,4 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 $rem-base: 16px !default;
 
 // Breakpoints
-$bp-mobile: 420px;
+$bp-mobile: rem-calc(590);

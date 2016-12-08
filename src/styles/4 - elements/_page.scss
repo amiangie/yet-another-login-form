@@ -16,4 +16,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+  
+  @include bp-mobile {
+    background: $color-bg;
+    &.fullpage {
+      display: block;
+    }
+  }
 }

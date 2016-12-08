@@ -9,4 +9,8 @@
     color: $color-white;
     text-decoration: none;
   }
+  
+  @include bp-mobile {
+    display: none;
+  }
 }

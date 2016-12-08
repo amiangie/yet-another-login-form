@@ -4,6 +4,9 @@
   line-height: rem-calc(40);
   text-align: center;
   background: $color-white;
+  @include bp-mobile {
+    background: $color-bg;
+  }
 }
 .notice__link {
   display: block;
