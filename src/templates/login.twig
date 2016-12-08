@@ -1,11 +1,11 @@
 {% extends "layouts/base.twig" %}
 {% set pageName = 'Login' %}
-{% set body_class = 'testclass' %}
+{% set body_class = 'fullpage' %}
 
 {% block header %}
 
   <div class="notice notice--top">
-    <a href="" class="link">Vaenägijale</a>
+    <a href="" class="notice__link">Vaenägijale</a>
   </div>
   	
 {% endblock %}
@@ -13,7 +13,7 @@
 
 {% block content %}
  
-  <section class="box box--login">
+  <section class="box">
   	<header class="box__header">
       <a href="" class="box__logo">
         <img src="assets/images/sib_logo.svg" alt="" class="box__logo-image">
@@ -59,11 +59,11 @@
     
     <footer class="box__footer">
       <div class="box__footer--left">
-        <a href="" class="link">Mis on iseteenindus?</a>
+        <a href="" class="box__footer-link">Mis on iseteenindus?</a>
       </div>
       <div class="box__footer--right">
-        <a href="" class="link">ENG</a>
-        <a href="" class="link">RUS</a>
+        <a href="" class="box__footer-link">ENG</a>
+        <a href="" class="box__footer-link">RUS</a>
       </div>
     </footer>
   </section>

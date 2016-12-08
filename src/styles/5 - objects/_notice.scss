@@ -1,0 +1,10 @@
+.notice {
+  width: 100%;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
+  text-align: center;
+  background: $color-white;
+}
+.notice__link {
+  display: block;
+}

@@ -2,9 +2,11 @@
 
 a {
   color: $color-link;
-  text-decoration: underline;
+  text-decoration: none;
+  transition: color 0.25s;
 
   &:hover {
-    color: $color-text;
+    color: $color-light-blue;
+    transition: color 0.25s;
   }
 }

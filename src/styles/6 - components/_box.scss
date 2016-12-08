@@ -1,0 +1,38 @@
+// Box component
+
+.box {
+  width: rem-calc(510);
+  margin: 0 auto;
+  padding: rem-calc(35) rem-calc(50) rem-calc(38) rem-calc(50);
+  background: $color-bg;
+}
+.box__header {
+  text-align: center;
+}
+.box__logo {
+  display: inline-block;
+  width: rem-calc(270);
+  height: rem-calc(103);
+}
+.box__logo-image {
+  width: rem-calc(270);
+  height: rem-calc(103);
+}
+.box__title {
+  width: rem-calc(272);
+  text-align: center;
+  margin: rem-calc(21) auto rem-calc(24) auto;
+}
+.box__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem-calc(21);
+  padding-top: rem-calc(11);
+  border-top: 1px solid $color-border;
+}
+.box__footer-link {
+  font-size: rem-calc(14);
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

@@ -4,13 +4,10 @@ h1, h2 {
   color: $color-heading;
   font-weight: 400;
   line-height: 1.375;
-  margin: 0 0 2rem;
+  margin: rem-calc(21) 0 rem-calc(24) 0;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: rem-calc(20);
 }
 
-h2 {
-  font-size: 2rem;
-}

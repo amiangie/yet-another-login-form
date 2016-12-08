@@ -1,11 +1,16 @@
 // Page
 
-html {
-  background: $color-bg;
+body {
   color: $color-text;
   font-family: $font-roboto;
-  font-size: 0.875rem;
-  line-height: 2;
-  padding: 1rem;
+  font-size: 16px;
+  background: url('../assets/images/bg.jpg') bottom center no-repeat;
+  background-size: cover;
+  
+  &.fullpage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-

@@ -1,7 +1,12 @@
 // Footer
 
-.c-footer {
-  border-top: 1px solid $color-border;
-  font-size: 0.8rem;
-  margin-top: 2rem;
+.page-footer {
+  color: $color-white;
+  font-size: rem-calc(14px);
+  text-align: center;
+  
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
 }
