@@ -1,9 +1,12 @@
 // Page
 
+html {
+  font-size: $rem-base;
+}
+
 body {
   color: $color-text;
   font-family: $font-roboto;
-  font-size: $rem-base;
   background: url('../assets/images/bg.jpg') bottom center no-repeat;
   background-size: cover;
   
