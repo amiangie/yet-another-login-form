@@ -21,7 +21,7 @@ var scriptsTask = function (gulp, plugins, config, helpers) {
           .pipe(plugins.vinylSourceStream('bundle.js'))
           .pipe(plugins.vinylBuffer())
           .pipe(plugins.sourcemaps.init({loadMaps: true}))
-          .pipe(plugins.uglify())
+//          .pipe(plugins.uglify())
           .pipe(plugins.sourcemaps.write('./'))
           .pipe(gulp.dest(path.join(config.dest.base, config.dest.scripts)))
           .pipe(plugins.browserSync.stream());
@@ -31,7 +31,7 @@ var scriptsTask = function (gulp, plugins, config, helpers) {
         .pipe(plugins.vinylSourceStream('bundle.js'))
         .pipe(plugins.vinylBuffer())
         .pipe(plugins.sourcemaps.init({loadMaps: true}))
-        .pipe(plugins.uglify())
+//        .pipe(plugins.uglify())
         .pipe(plugins.sourcemaps.write('./'))
         .pipe(plugins.rev())
         .pipe(plugins.revReplace())

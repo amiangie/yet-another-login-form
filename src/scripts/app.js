@@ -3,6 +3,12 @@
   Author: Angie K. Titova
  */
 
-var greet = require('./greeting.js')
+const accordionButtons = document.querySelectorAll('.js-accordion-trigger');
 
-greet('World');
+[...accordionButtons].forEach(button => {
+  button.addEventListener('click', function(event) {
+    const newAriaExpanded = !(this.getAttribute('aria-expanded') == 'true');
+    this.setAttribute('aria-expanded', newAriaExpanded);
+    this.classList.toggle('accordion__trigger--expanded');
+  });
+});
