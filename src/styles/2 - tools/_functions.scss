@@ -5,8 +5,6 @@
 // from Zurb Foundation
 // ------------------------------------------
 
-$rem-base: 16px !default;
-
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);

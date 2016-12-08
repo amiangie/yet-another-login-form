@@ -24,31 +24,37 @@
       <h1 class="box__title">
         Sisenen Sotsiaalkindlustusameti iseteenindusse
       </h1>
-      <ul class="accordion">
+      <ul class="accordion" aria-label="Accordion buttons">
         <li class="accordion__item">
-          <button class="accordion__trigger"></button>
-          <div class="accordion__content">
+          <button class="accordion__trigger" aria-controls="login-IDCard" aria-expanded="false">
+            <img src="assets/images/idcard.png" alt="ID kaart" aria-hidden="true" class="accordion__image">
+            Sisene ID-kaardiga
+          </button>
+          <div class="accordion__content" id="login-IDCard">
               <form action="">
               <label for="userID" class="form__label">
                 <span class="visuallyhidden">Sinu isikukood</span>
-                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood">
+                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood" pattern="[0-9]*">
               </label>
               <input type="submit" class="button" value="Sisenen">
             </form>
           </div>
         </li>
         <li class="accordion__item">
-          <button class="accordion__trigger"></button>
-          <div class="accordion__content">
+          <button class="accordion__trigger" aria-controls="login-mobileID" aria-expanded="false">
+            <img src="assets/images/mobileid.png" alt="Mobiil ID" aria-hidden="true" class="accordion__image">
+            Sisene Mobiil ID-ga
+          </button>
+          <div class="accordion__content" id="login-mobileID">
             <form action="">
               <label for="userID" class="form__label">
                 <span class="visuallyhidden">Sinu isikukood</span>
-                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood">
+                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood" pattern="[0-9]*">
               </label>
               
               <label for="userMobile" class="form__label visuallyhidden">
-                <span class="visuallyhidden">Sinu isikukood</span>
-                <input type="text" class="form__input" id="userMobile" placeholder="Sinu telefoninumber">
+                <span class="visuallyhidden">Sinu telefoninumber</span>
+                <input type="tel" class="form__input" id="userMobile" placeholder="Sinu telefoninumber">
               </label>
               <input type="submit" class="button" value="Sisenen">
             </form>
