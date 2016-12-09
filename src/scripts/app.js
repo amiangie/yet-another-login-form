@@ -14,6 +14,7 @@ const accordionButtons = document.querySelectorAll('.js-accordion-trigger');
 
     this.setAttribute('aria-expanded', newAriaExpanded);
     buttonPanel.setAttribute('aria-hidden', !newAriaExpanded);
+    this.setAttribute('aria-selected', newAriaExpanded);
     this.classList.toggle('accordion__trigger--expanded');
   });
 });
@@ -26,6 +27,7 @@ function collapseOtherPanels(ele) {
     const buttonPanel = document.getElementById(button.getAttribute('aria-controls'));
     
     button.setAttribute('aria-expanded', false);
+    button.setAttribute('aria-selected', false);
     buttonPanel.setAttribute('aria-hidden', true);
     button.classList.remove('accordion__trigger--expanded');
   });

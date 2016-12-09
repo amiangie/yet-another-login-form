@@ -16,7 +16,7 @@
   <section class="box">
   	<header class="box__header">
       <a href="" class="box__logo">
-        <img src="assets/images/sib_logo.svg" alt="" class="box__logo-image">
+        <img src="assets/images/sib_logo.svg" alt="Sotsiaalkindlustusamet" class="box__logo-image">
       </a>
     </header>
     
@@ -29,13 +29,13 @@
           Sisenen Mobiil ID-ga Sotsiaalkindlustusameti iseteenindusse
         </span>
       </h1>
-      <ul class="accordion" aria-label="Accordion buttons">
+      <ul class="accordion" aria-label="Accordion buttons to choose login form" role="tablist">
         <li class="accordion__item accordion__item--idcard">
-          <button class="accordion__trigger js-accordion-trigger" aria-controls="login-IDCard" aria-expanded="false">
-            <img src="assets/images/idcard.png" alt="ID kaart" aria-hidden="true" class="accordion__image">
+          <button class="accordion__trigger js-accordion-trigger" aria-controls="login-IDCard" aria-expanded="false" aria-selected="false" id="button-login-IDCard" role="tab">
+            <img src="assets/images/idcard.png" alt="" aria-hidden="true" class="accordion__image">
             Sisene ID-kaardiga
           </button>
-          <div class="accordion__content" id="login-IDCard" aria-hidden="true">
+          <div class="accordion__content" id="login-IDCard" aria-labelledby="button-login-IDCard" aria-hidden="true" role="tabpanel">
             <form action="">
               <label for="userID" class="form__label">
                 <span class="u-visuallyhidden">Sinu isikukood</span>
@@ -46,18 +46,18 @@
           </div>
         </li>
         <li class="accordion__item accordion__item--mobileid">
-          <button class="accordion__trigger js-accordion-trigger" aria-controls="login-mobileID" aria-expanded="false">
-            <img src="assets/images/mobileid.png" alt="Mobiil ID" aria-hidden="true" class="accordion__image">
+          <button class="accordion__trigger js-accordion-trigger" aria-controls="login-mobileID" id="button-login-mobileID" aria-expanded="false" aria-selected="false" role="tab">
+            <img src="assets/images/mobileid.png" alt="" aria-hidden="true" class="accordion__image">
             Sisene Mobiil ID-ga
           </button>
-          <div class="accordion__content" id="login-mobileID" aria-hidden="true">
+          <div class="accordion__content" id="login-mobileID" aria-labelledby="button-login-mobileID" aria-hidden="true" role="tabpanel">
             <form action="">
-              <label for="userID" class="form__label">
+              <label for="mobuserID" class="form__label">
                 <span class="u-visuallyhidden">Sinu isikukood</span>
-                <input type="text" class="form__input" id="userID" placeholder="Sinu isikukood" pattern="[0-9]*">
+                <input type="text" class="form__input" id="mobuserID" placeholder="Sinu isikukood" pattern="[0-9]*">
               </label>
               
-              <label for="userMobile" class="form__label visuallyhidden">
+              <label for="userMobile" class="form__label">
                 <span class="u-visuallyhidden">Sinu telefoninumber</span>
                 <input type="tel" class="form__input" id="userMobile" placeholder="Sinu telefoninumber">
               </label>
