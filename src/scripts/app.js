@@ -10,6 +10,7 @@ const accordionButtons = document.querySelectorAll('.js-accordion-trigger');
     collapseOtherPanels(this);
     const newAriaExpanded = !(this.getAttribute('aria-expanded') == 'true');
     this.setAttribute('aria-expanded', newAriaExpanded);
+    this.setAttribute('aria-expanded', !newAriaExpanded);
     this.classList.toggle('accordion__trigger--expanded');
   });
 });
@@ -19,6 +20,7 @@ function collapseOtherPanels(ele) {
   const otherAccordionButtons = [...accordionButtons].filter(btn => btn !== ele);
   otherAccordionButtons.forEach(button => {
     button.setAttribute('aria-expanded', false);
+    button.setAttribute('aria-hidden', true);
     button.classList.remove('accordion__trigger--expanded');
   });
 }
