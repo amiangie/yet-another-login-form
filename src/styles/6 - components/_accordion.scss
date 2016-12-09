@@ -47,7 +47,7 @@
   }
   
   &--expanded ~ .accordion__content {
-//    display: block;
+    visibility: visible;
     max-height: 10em;
     padding-bottom: rem-calc(30);
   }
@@ -68,16 +68,20 @@
 }
 .accordion__content {
   padding: 0 rem-calc(34) rem-calc(30) rem-calc(29);
-//  display: none;
+  display: block;
+  visibility: hidden;
   max-height: 0;
   overflow: hidden;
   padding-bottom: 0;
   transition: all 500ms;
   
   @include bp-mobile {
-    display: block;
+    visibility: visible;
+    max-height: 10em;
+    overflow: visible;
     border-bottom: none;
     padding: 0 0 rem-calc(30) 0;
+    transition: none;
   }
 }
 
