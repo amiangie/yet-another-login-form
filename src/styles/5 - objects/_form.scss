@@ -1,3 +1,6 @@
+.form {
+  font-size: 1rem;
+}
 .form__label {
   display: block;
 }
@@ -6,71 +9,55 @@
   border: 1px solid $color-border;
   border-radius: 2px;
   width: 100%;
-  height: rem-calc(36);
-  margin-bottom: rem-calc(17);
-  padding-left: rem-calc(17);
+  font-size: 0.875em;
+  height: 2.575em;
+  margin-bottom: 1.214em;
+  padding-left: 1.214em;
+  
+  @include bp-mobile {
+    margin-bottom: 0.8em;
+  }
 }
 .button {
   display: block;
-  height: 36px;
-  font-size: rem-calc(14);
+  height: 2.575em;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.875em;
   text-transform: uppercase;
   color: $color-white;
   background: $color-middle-blue;
   border: 1px solid $color-border;
   border-radius: 2px;
-  width: 100%;
-  
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 :-moz-placeholder { /* Firefox 18- */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 ::-ms-input-placeholder { /* Edge */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }
 :placeholder-shown { /* Standard one last! */
   color: $color-text;
-  font-size: rem-calc(14);
+  font-size: 1em;
   opacity: 1;
-  @include bp-mobile {
-    font-size: rem-calc(16);
-  }
 }

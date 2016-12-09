@@ -1,14 +1,15 @@
 // Box component
 
 .box {
-  width: rem-calc(510);
+  font-size: 1rem;
+  width: 31.88rem;
   margin: 1rem auto;
-  padding: rem-calc(35) rem-calc(50) rem-calc(38) rem-calc(50);
+  padding: 2.188em 3.125em 2.375em 3.125em;
   background: $color-bg;
   
   @include bp-mobile {
     margin: 0;
-    padding: rem-calc(45) rem-calc(25) rem-calc(44) rem-calc(25);
+    padding: 2.2em 1.563em 2.75em 1.563em;
     width: 100%;
   }
 }
@@ -17,38 +18,41 @@
 }
 .box__logo {
   display: inline-block;
-  width: rem-calc(270);
-  height: rem-calc(103);
+  width: 16.875em;
+  height: 6.438em;
   
   @include bp-mobile {
     width: 100%;
   }
 }
 .box__logo-image {
-  width: rem-calc(270);
-  height: rem-calc(103);
+  width: 16.875em;
+  height: 6.438em;
   @include bp-mobile {
     width: 100%;
     height: auto;
   }
 }
 .box__title {
-  width: rem-calc(272);
+  font-size: 1.25em;
+  width: 17em;
   margin: 0 auto;
   text-align: center;
   
   .box__title--desktop {
     display: block;
-    margin: rem-calc(21) auto rem-calc(24) auto;
+    margin: 1.05em auto 1.2em auto;
   }
   .box__title--mobile {
     display: none;
   }
   
   @include bp-mobile {
+    width: 13.5em;
+    
     .box__title--mobile {
       display: block;
-      margin: rem-calc(16) auto rem-calc(40) auto;
+      margin: 0.8em auto 2em auto;
     } 
     .box__title--desktop {
       display: none;
@@ -58,20 +62,21 @@
 .box__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: rem-calc(21);
-  padding-top: rem-calc(11);
+  margin-top: 1.313em;
+  padding-top: 0.688em;
   border-top: 1px solid $color-border;
   
   @include bp-mobile {
-    margin-top: 0;
+    margin-top: 2.063em;
   }
 }
+
 .box__footer-link {
-  font-size: rem-calc(14);
+  font-size: 0.875em;
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 1em;
   }
   @include bp-mobile {
-    font-size: rem-calc(16);
+    font-size: 1em;
   }
 }

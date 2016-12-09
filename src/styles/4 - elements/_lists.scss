@@ -1,13 +1,13 @@
 // Lists
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 
   > ul,
   > ol {
     margin-bottom: 0;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+    margin-left: 1em;
+    margin-top: 0.5em;
   }
 }
 
@@ -16,6 +16,6 @@ dt {
 }
 
 dd {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
