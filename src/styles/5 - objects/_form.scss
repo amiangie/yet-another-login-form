@@ -6,6 +6,7 @@
 }
 .form__input {
   display: block;
+  background: $color-white;
   border: 1px solid $color-border;
   border-radius: 2px;
   width: 100%;
@@ -13,6 +14,9 @@
   height: 2.575em;
   margin-bottom: 1.214em;
   padding-left: 1.214em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   
   @include bp-mobile {
     margin-bottom: 0.8em;
