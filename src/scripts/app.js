@@ -5,9 +5,9 @@
 
 const accordionButtons = document.querySelectorAll('.js-accordion-trigger');
 
-[...accordionButtons].forEach(button => {
-  button.addEventListener('click', function(event) {
-    const buttonPanel = document.getElementById(button.getAttribute('aria-controls'));
+[...accordionButtons].forEach(accordionButton => {
+  accordionButton.addEventListener('click', function(event) {
+    const buttonPanel = document.getElementById(accordionButton.getAttribute('aria-controls'));
     const newAriaExpanded = !(this.getAttribute('aria-expanded') == 'true');
     
     collapseOtherPanels(this);
@@ -23,12 +23,12 @@ const accordionButtons = document.querySelectorAll('.js-accordion-trigger');
 function collapseOtherPanels(ele) {
   const otherAccordionButtons = [...accordionButtons].filter(btn => btn !== ele);
   
-  otherAccordionButtons.forEach(button => {
-    const buttonPanel = document.getElementById(button.getAttribute('aria-controls'));
+  otherAccordionButtons.forEach(accordionButton => {
+    const buttonPanel = document.getElementById(accordionButton.getAttribute('aria-controls'));
     
-    button.setAttribute('aria-expanded', false);
-    button.setAttribute('aria-selected', false);
+    accordionButton.setAttribute('aria-expanded', false);
+    accordionButton.setAttribute('aria-selected', false);
     buttonPanel.setAttribute('aria-hidden', true);
-    button.classList.remove('accordion__trigger--expanded');
+    accordionButton.classList.remove('accordion__trigger--expanded');
   });
 }

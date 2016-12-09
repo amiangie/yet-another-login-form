@@ -23,7 +23,9 @@
     <footer class="page-footer">
       {% include 'partials/footer.twig' %}
     </footer>
-    <script src="scripts/{{ assetPath('bundle.js') }}" async></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="scripts/polyfill.min.js"></script>
+    <script type="text/babel" src="scripts/{{ assetPath('bundle.js') }}"></script>
   {% endblock %}
 </body>
 </html>
