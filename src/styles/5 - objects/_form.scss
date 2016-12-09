@@ -33,31 +33,25 @@
 
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
 ::-ms-input-placeholder { /* Edge */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
 :placeholder-shown { /* Standard one last! */
   color: $color-text;
-  font-size: 1em;
   opacity: 1;
 }
