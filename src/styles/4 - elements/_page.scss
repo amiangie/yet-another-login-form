@@ -9,6 +9,7 @@ body {
   font-family: $font-roboto;
   background: url('../assets/images/bg.jpg') bottom center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   
   &.fullpage {
     min-height: 100vh;
