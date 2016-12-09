@@ -69,6 +69,7 @@
   display: none;
   
   @include bp-mobile {
+    display: block;
     border-bottom: none;
     padding: 0 0 rem-calc(30) 0;
   }
